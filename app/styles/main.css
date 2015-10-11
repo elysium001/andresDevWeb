@@ -1,5 +1,258 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 .jumbotron {
-  background: rgba(0,0,0,0.4);
+  background: #006282;
+  border-radius: 0;
+  border-bottom: 1px solid white;
+  color: white;
+  height: 100%;
+}
+
+
+body {
+    font-family: 'Droid Serif', serif;
+}
+
+.container-main {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+/* navbar */
+.navbar {
+  border: none;
+  background: transparent;
+  margin-bottom: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+/* hp arrow */
+.arrow-link {
+  position: absolute;
+  bottom: 65px;
+  font-size: 65px;
+  left: 50%;
+  z-index: 15;
+  margin: 0 auto;
+  -webkit-animation: wiggle 0.5s infinite;
+  -moz-animation: wiggle 0.5s infinite;
+  animation: wiggle 0.5s infinite;
+
+}
+
+.arrow-link a {
   color: white;
 }
+
+
+/* carousel */
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-inner .item {
+  color: white;
+  height: 100vh;
+  text-align: center;
+}
+
+.item h1 {
+  margin: 0;
+  padding-top: 30%;
+}
+.firstslide {
+  background: #23ffaa;
+  border-right: 3px solid #FFC46A;
+  border-bottom: 3px solid #00C526;
+  border-left: 3px solid #64A7FF;
+  border-top: 3px solid #FFA1A1;
+}
+
+.secondslide {
+  background: url(/images/deskimage.png) no-repeat;
+  background-size: cover;
+  background-position-x: -480px;
+}
+
+.thirdslide {
+  background: #23E6FF;
+}
+
+.marketing .row {
+  max-height: 420px;
+  margin: 0 -8px;
+}
+
+
+.topic-content {
+  color: white;
+  height: 260px;
+  padding: 25px 40px;
+}
+
+.topic-content .thumbnail {
+  width: 20%;
+  margin: 0 auto;
+  border-radius: 64px;
+}
+
+.webtopic .topic-content {
+  background: #ABABAB;
+}
+
+.responsivetopic .topic-content {
+  background: #6F6F6F;
+}
+
+.analyticstopic .topic-content {
+  background: #4C4C4C;
+}
+
+.topic-titles {
+  border-left: 8px solid;
+  color: white;
+  height: 260px;
+  padding: 7% 0;
+  text-align: center;
+}
+
+/* topic headers */
+.webtopic .topic-titles {
+  background-color: #00B6FF;
+  border-color: #007AAB;
+}
+
+.webtopic .topic-titles:hover {
+  background-color: #007AAB;
+  border-color: #00B6FF;
+}
+
+.responsivetopic .topic-titles{
+  background-color: #0092FF;
+  border-color: #A8DAFF;
+}
+
+.responsivetopic .topic-titles:hover {
+  background-color: #A8DAFF;
+  border-color: #0092FF;
+}
+
+.analyticstopic .topic-titles {
+  background-color: #006282;
+  border-color: #008AB7;
+}
+
+.analyticstopic .topic-titles:hover {
+  background-color: #008AB7;
+  border-color: #006282;
+}
+
+/* about me */
+
+.aboutme {
+  padding-top: 50px;
+}
+
+.meandg {
+  background: url(/images/meandgblur.png) no-repeat;
+  background-size: contain;
+  background-position-x: 50%;
+  height: 345px;
+  margin: 0 auto;
+  width: 48%;
+}
+.meandg:hover {
+  background: url(/images/meandg.png) no-repeat;
+  background-size: contain;
+  background-position-x: 50%;
+  height: 345px;
+}
+
+.businesscard {
+  background: url(/images/obscard.png) no-repeat;
+  height: 761px;
+  margin: 0 auto;
+  position: relative;
+  width: 388px;
+}
+
+.homepage,
+.email,
+.phone {
+  display: block;
+  height: 83px;
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+.contact {
+  position: relative;
+  padding-top: 291px;
+}
+
+.contact-container {
+  padding-top: 50px;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social i {
+  color: black;
+  font-size: 135px;
+}
+.social a {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.social a i:hover {
+  color: white;
+}
+
+.fb:hover,
+.tw:hover,
+.git:hover {
+  background: black;
+}
+
+/* footer */
+
+/* css3 keyframe bounce */
+/* safari and chrome */
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform:rotate(4deg);}
+  50% {-webkit-transform:rotate(-4deg);}
+  100% {-webkit-transform:rotate(4deg);}
+}
+ 
+/* firefox */
+@-moz-keyframes wiggle {
+  0% {-moz-transform:rotate(4deg);}
+  50% {-moz-transform:rotate(-4deg);}
+  100% {-moz-transform:rotate(4deg);}
+}
+ 
+/* anyone brave enough to implement the ideal method */
+@keyframes wiggle {
+  0% {transform:rotate(4deg);}
+  50% {transform:rotate(-4deg);}
+  100% {transform:rotate(4deg);}
+}
+ 
 
