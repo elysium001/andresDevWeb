@@ -71,7 +71,7 @@ body {
 
 .item h1 {
   margin: 0;
-  padding-top: 400px;
+  padding-top: 43vh;
 }
 .firstslide {
   background: #23ffaa;
@@ -92,15 +92,23 @@ body {
 }
 
 .marketing .row {
-  max-height: 420px;
-  margin: 0 -8px;
+  margin: 0;
+  height: 232px;
+  padding: 0;
+}
+
+.marketing .row .col-md-12{
+  padding: 0;
 }
 
 
 .topic-content {
   color: white;
-  height: 260px;
-  padding: 25px 40px;
+  height: 100%;
+}
+
+.topic-content p {
+  padding: 25px 0;
 }
 
 .topic-content .thumbnail {
@@ -124,8 +132,8 @@ body {
 .topic-titles {
   border-left: 8px solid;
   color: white;
-  height: 260px;
-  padding: 7% 0;
+  height: 100%;
+  padding: 88px 0;
   text-align: center;
 }
 
@@ -163,22 +171,22 @@ body {
 /* about me */
 
 .aboutme {
-  padding-top: 50px;
+  padding-top: 118px;
 }
 
 .meandg {
   background: url(/images/meandgblur.png) no-repeat;
   background-size: contain;
   background-position-x: 50%;
-  height: 345px;
+  border: 5px solid black;
+  height: 311px;
   margin: 0 auto;
-  width: 48%;
+  width: 236px;
 }
 .meandg:hover {
   background: url(/images/meandg.png) no-repeat;
   background-size: contain;
   background-position-x: 50%;
-  height: 345px;
 }
 
 .businesscard {
@@ -208,7 +216,7 @@ body {
 }
 
 .social {
-  margin-top: 20px;
+  margin: 80px;
 }
 
 .social i {
