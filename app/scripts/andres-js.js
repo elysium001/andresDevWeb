@@ -25,8 +25,10 @@ $(function() {
 
 	// image preloading
 	var curImg = new Image();
-
 	curImg.src = "/images/meandg.png";
+	var curImg2 = new Image();
+	curImg2.src = "/images/meandgblur.png";
+
 
 
 

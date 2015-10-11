@@ -4,3 +4,5 @@
 /.sass-cache
 /bower_components
 sftp-config.json
+/app/images/.png
+/app/images/.jpeg
