@@ -19,7 +19,7 @@ $(function() {
 	$('a[href*="#webtopic"]').click(function(){
 	    $('html, body').animate({
 	        scrollTop: $( $.attr(this, 'href') ).offset().top
-	    }, 500);
+	    }, 1000);
 	    return false;
 	});
 
@@ -29,7 +29,10 @@ $(function() {
 	var curImg2 = new Image();
 	curImg2.src = "/images/meandgblur.png";
 
-
+	// hide mobile nave on link click
+	$(".navbar-default .navbar-nav > li > a").on("click", function() {
+		$(".navbar-collapse").removeClass("in");
+	});
 
 
 });

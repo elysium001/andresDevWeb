@@ -9,6 +9,10 @@ html {
   box-sizing: inherit;
 }
 
+html, body{
+  height:100%;
+}
+
 .jumbotron {
   background: #006282;
   border-radius: 0;
@@ -23,7 +27,7 @@ body {
 }
 
 .container-main {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -37,14 +41,21 @@ body {
   z-index: 1;
 }
 
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    border: 2px solid #e7e7e7;
+    background-color: transparent;
+}
+
 /* hp arrow */
 .arrow-link {
   position: absolute;
   bottom: 65px;
   font-size: 65px;
-  left: 50%;
   z-index: 15;
-  margin: 0 auto;
+  margin: 0 49%;
   -webkit-animation: wiggle 0.5s infinite;
   -moz-animation: wiggle 0.5s infinite;
   animation: wiggle 0.5s infinite;
@@ -82,9 +93,11 @@ body {
 }
 
 .secondslide {
-  background: url(/images/deskimage.png) no-repeat;
+  background: url(/images/deskimage.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position-x: -480px;
 }
 
 .thirdslide {
@@ -241,6 +254,13 @@ body {
 
 /* footer */
 
+.footer {
+  background: #ADADAD;
+  color: white;
+  bottom: 0;
+  width: 100%;
+}
+
 /* css3 keyframe bounce */
 /* safari and chrome */
 @-webkit-keyframes wiggle {
@@ -263,4 +283,40 @@ body {
   100% {transform:rotate(4deg);}
 }
  
+/* MOBILE */
+@media (max-width: 768px) {
+  .arrow-link {
+    margin: 0 44%;
+  }
 
+  .aboutme,
+  .contact-container {
+    padding-top: 0;
+  }
+  
+  .businesscard {
+    background-size: contain;
+    height: 670px;
+    width: 100%;
+  }
+
+  .contact-container h1 {
+    text-align: center;
+  }
+
+  .item h1 {
+    padding-top: 34vh;    
+  }
+
+  .navbar {
+    position: relative;
+  }
+  
+  .pull-right {
+    float: none !important;
+  }
+
+  .marketing .row {
+    height: auto;
+  } 
+}
